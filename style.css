@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #4158d0;
+	background-image: linear-gradient(
+		43deg,
+		#4158d0 0%,
+		#c850c0 46%,
+		#ffcc70 100%
+	);
+	font-family: 'roboto', sans-serif;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden; /* Use to hide the scrool bar */
+}
+
+.container {
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 20px 50px;
+	width: 800px;
+	height: auto;
+	border-radius: 10px;
+	text-align: center;
+}
+
+h1 {
+	color: rgba(255, 255, 255, 0.774);
+	letter-spacing: 2px;
+	margin: 30px 0;
+	font-size: 45px;
+}
+
+.jokes {
+	color: white;
+	font-size: 26px;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+}
+
+.btn {
+	background-color: #c850c0;
+	padding: 15px 50px;
+	border-radius: 20px;
+	border: none;
+	color: white;
+	font-size: 16px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	margin: 30px 0;
+	cursor: pointer;
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.btn:focus {
+	outline: none;
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		width: 700px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.container {
+		width: 600px;
+	}
+
+	h1 {
+		font-size: 35px;
+	}
+
+	.jokes {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.container {
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.container {
+		width: 400px;
+	}
+
+	h1 {
+		font-size: 30px;
+		margin: 10px 0;
+	}
+
+	.jokes {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.container {
+		width: 350px;
+	}
+}
